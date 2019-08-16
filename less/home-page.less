@@ -5,17 +5,28 @@
   .intro {
     img{
       border-radius:5px;
-    }
+      width:100%;
+    }//img
 
     h2 {
       padding: 15px;
-    }
+
+    }//h2
 
     p {
       padding:0 15px;
+    }//p
+
+    @media @phone{
+      width:100%;
     }
   
-  }
+  }//intro
+
+
+
+
+
 
   .space-images {
     display: flex;
@@ -27,8 +38,29 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+    }//img
+    @media @phone{
+      justify-content: center;
+      img{
+        margin: 20px 2.5%;
+      }
+      .blast{
+        display:flex;
+        width:90%;
+        justify-content: center;
+
+      }//blast
+      .sky{
+        .hideImg();
+
+      }//sky
+      .launch{
+        .hideImg();
+
+      }
+
+    }//media
+  }//spaceimages
 
   .visit-planets {
     padding: 15px;

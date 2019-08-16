@@ -1,12 +1,11 @@
 // Navigation code here
 
-.navContainer{
+.navContainer{//not container
     width:100%;
-    display:flex;
-    // .displayFlex(row,center,center);
+    // display:flex;
     padding:2rem 0 1rem 0;
     background-color:@nav-bg;
-    div{
+    div{//container
         .displayFlex(column,center,center);
         font-family:@nav-font;
 
@@ -17,22 +16,24 @@
             width:45%;
             justify-content: space-between;
 
-
             a{
                 text-decoration:none;
                 font-size:1.5rem;
                 color:@main-font-color;
                 justify-content:space-between;
                 font-weight:bold;
-
-
-
             }//a
+
+            @media @phone{
+                width:80%;
+            }
         }//nav
+
         h1{
             font-size:4rem;
             margin:0 0 2rem 0;
-
+            width:100%;
+            text-align: center;
         }//h1
 
 
