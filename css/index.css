@@ -366,7 +366,22 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+.formBlock h1 {
+  font-size: 4rem;
+  margin: 1rem 0 3rem 0;
+}
+.formBlock h1 p {
+  width: 60%;
+  text-align: center;
+  margin-bottom: 20%;
 }
 .formBlock form {
   width: 60%;
+}
+.formBlock form input {
+  width: 100%;
 }
