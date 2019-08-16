@@ -362,3 +362,11 @@ footer {
     padding: 2rem;
   }
 }
+.formBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.formBlock form {
+  width: 60%;
+}
