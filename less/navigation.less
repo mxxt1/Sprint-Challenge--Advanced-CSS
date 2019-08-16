@@ -1,1 +1,44 @@
 // Navigation code here
+
+.navContainer{
+    width:100%;
+    display:flex;
+    // .displayFlex(row,center,center);
+    padding:2rem 0 1rem 0;
+    background-color:@nav-bg;
+    div{
+        .displayFlex(column,center,center);
+        font-family:@nav-font;
+
+
+    
+        nav{
+            display:flex;
+            width:50%;
+            justify-content: space-between;
+
+
+            a{
+                text-decoration:none;
+                font-size:1.5rem;
+                color:@main-font-color;
+                justify-content:space-between;
+                font-weight:bold;
+
+
+
+            }//a
+        }//nav
+        h1{
+            font-size:4rem;
+            margin:0 0 2rem 0;
+
+        }//h1
+
+
+
+
+
+    }//div
+}//navContainer
+
