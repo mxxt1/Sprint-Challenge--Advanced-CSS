@@ -36,13 +36,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Adaptive websites utilize size-specific layouts and breakpoints to change the entire layout based on size. Responsive websites utilize a set fixed global width and use media queries to reposition elements appropriately (keeping the same initial layout).
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first design prioritizes mobile experience above desktop experience, by prioritizing information importance. As the screen size increases, second-order information is added to fil out the site. In short, the mobile version is the default, and elements are *added as screen size increases*. Desktop-first includes all information, and as screen size *decreases*, information and assets are moved or hidden/not-displayed in order to render a mobile view. Mobile-first = min-width, and desktop first = max-width.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    Font-size: 62.5% resizes the default font size (16px) to 10px (16*.625=10). That allows a base number that is easier to calculate and manipulate using root-relative sizing. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing utilizes an abstracted syntax (like a programming language) to make coding css easier. It does this by using a more intuitive syntax and compiler to render a vanilla css file.  
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept in preprocessing is mixins and parametric mixins, because they allow the creation of standardized css recipes, while allowing flexibility via parameters. I also really like the concept escaping for media queries. 
+
+    The concept that gives me the most trouble is... parametric mixins! Specifically, minimizing the content of the mixin while maximizing the parameters and flexibility.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
